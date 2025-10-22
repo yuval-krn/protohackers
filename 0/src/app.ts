@@ -9,4 +9,4 @@ function newConn(socket: net.Socket): void {
 }
 const server = net.createServer();
 server.on("connection", newConn);
-server.listen({ host: "127.0.0.1", port: 1234 });
+server.listen({ host: "0.0.0.0", port: 1234 });
