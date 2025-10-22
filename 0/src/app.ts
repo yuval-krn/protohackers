@@ -1,6 +1,7 @@
 import * as net from "net";
 
 function newConn(socket: net.Socket): void {
+  console.log("new connection!");
   socket.on("data", (data: Buffer) => {
     socket.write(data);
     socket.end();
